@@ -1,0 +1,13 @@
+{
+    "name": "nteej/contactform",
+    "description": "A contact form package for laravel",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Nteej\\ContactForm\\": "src/"
+        }
+    }
+}
