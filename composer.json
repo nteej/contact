@@ -1,13 +1,21 @@
 {
     "name": "nteej/contactform",
-    "description": "A contact form package for laravel",
-    "type": "library",
+    "description": "A smart contact form for laravel",
+    "keywords": ["contactform", "laravel", "lumen","contact"],
+    "type": "project",
     "license": "MIT",
     "minimum-stability": "dev",
-    "require": {},
+    "require": {
+        "laravel/framework": "5.5.*"
+    },
     "autoload": {
         "psr-4": {
             "Nteej\\ContactForm\\": "src/"
         }
-    }
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "prefer-stable": true
 }

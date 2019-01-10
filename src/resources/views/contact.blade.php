@@ -1,4 +1,4 @@
-<!-- MyVendor\contactform\src\resources\views\contact.blade.php -->
+<!-- nteej\contactform\src\resources\views\contact.blade.php -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,19 +17,23 @@
     @if(session('status'))
         <div class="alert alert-success">
             {{ session('status') }}
+
         </div>
     @endif
+    <div class="alert alert-success">
+
         @if(Session::has('message'))
             {{Session::get("message")}}
         @endif
+    </div>
 
     <h3>Contact Us</h3>
 
     <form action="{{route('contact')}}" method="POST">
         @csrf
         <div class="form-group">
-            <label for="exampleFormControlInput1">Your name</label>
-            <input type="text" class="form-control" name="name" id="exampleFormControlInput" placeholder="John Doe">
+            <label for="exampleFormControlInput1">Your Name</label>
+            <input type="text" class="form-control" name="name" id="exampleFormControlInput" placeholder="Guest User">
         </div>
         <div class="form-group">
             <label for="exampleFormControlInput1">Email address</label>

@@ -36,3 +36,8 @@ To integrate this addon for your project, you should have:
 Next, we need to add our new service provider in our root config/app.php inside the providers array:
     
     nteej\ContactForm\ContactFormServiceProvider::class,
+
+##Execute
+Now you can start the server & check on browser with path of /contact
+
+    http://localhost:8000/contact
